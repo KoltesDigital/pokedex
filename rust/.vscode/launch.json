@@ -1,0 +1,19 @@
+{
+	"configurations": [
+		{
+			"args": [],
+			"cargo": {
+				"args": ["build", "--bin=training", "--package=training"],
+				"filter": {
+					"kind": "bin",
+					"name": "training"
+				}
+			},
+			"cwd": "${workspaceFolder}",
+			"name": "Run",
+			"request": "launch",
+			"type": "lldb"
+		}
+	],
+	"version": "0.2.0"
+}

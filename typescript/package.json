@@ -1,0 +1,16 @@
+{
+	"devDependencies": {
+		"@types/node": "^20.10.8",
+		"nodemon": "^3.0.2",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.3.3"
+	},
+	"main": "src/index.ts",
+	"scripts": {
+		"watch-run": "yarn run nodemon -e ts --exec ts-node ."
+	},
+	"engines": {
+		"node": ">=19"
+	},
+	"packageManager": "yarn@4.9.2"
+}

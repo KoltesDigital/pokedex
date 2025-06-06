@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"declaration": true,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": true,
+		"noUncheckedIndexedAccess": true,
+		"outDir": "./lib",
+		"rootDir": "./src",
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"target": "ESNext",
+		"types": ["node"]
+	}
+}

@@ -1,0 +1,103 @@
+{
+	"$defs": {
+		"Evolution": {
+			"properties": {
+				"name": {
+					"type": "string"
+				},
+				"num": {
+					"type": "string"
+				}
+			},
+			"required": ["name", "num"],
+			"type": "object"
+		},
+		"Pokemon": {
+			"properties": {
+				"id": {
+					"type": "number"
+				},
+				"height": {
+					"type": "number"
+				},
+				"weight": {
+					"type": "number"
+				},
+				"name": {
+					"type": "string"
+				},
+				"next_evolutions": {
+					"items": {
+						"$ref": "#/$defs/Evolution"
+					},
+					"type": "array"
+				},
+				"num": {
+					"type": "string"
+				},
+				"prev_evolutions": {
+					"items": {
+						"$ref": "#/$defs/Evolution"
+					},
+					"type": "array"
+				},
+				"types": {
+					"items": {
+						"$ref": "#/$defs/Type"
+					},
+					"type": "array"
+				},
+				"weaknesses": {
+					"items": {
+						"$ref": "#/$defs/Type"
+					},
+					"type": "array"
+				}
+			},
+			"required": [
+				"id",
+				"name",
+				"num",
+				"types",
+				"height",
+				"weight",
+				"weaknesses"
+			],
+			"type": "object"
+		},
+		"Type": {
+			"enum": [
+				"Bug",
+				"Dark",
+				"Dragon",
+				"Electric",
+				"Fairy",
+				"Ice",
+				"Fighting",
+				"Fire",
+				"Flying",
+				"Ghost",
+				"Grass",
+				"Ground",
+				"Normal",
+				"Poison",
+				"Psychic",
+				"Rock",
+				"Steel",
+				"Water"
+			]
+		}
+	},
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"properties": {
+		"pokemons": {
+			"items": {
+				"$ref": "#/$defs/Pokemon"
+			},
+			"type": "array"
+		}
+	},
+	"required": ["pokemons"],
+	"title": "Pokedex",
+	"type": "object"
+}

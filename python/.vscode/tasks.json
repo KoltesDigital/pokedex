@@ -1,0 +1,11 @@
+{
+	"tasks": [
+		{
+			"command": "npx nodemon -e py --exec 'pipenv run python -m training'",
+			"label": "Watch & Run",
+			"type": "shell",
+			"problemMatcher": []
+		}
+	],
+	"version": "2.0.0"
+}
